@@ -1,0 +1,40 @@
+.screenshot {
+  position: relative;    
+
+  img {
+    width: 100%;      
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    padding-top: 20px;
+   }
+  
+  &:after {
+    font-size: 0.8em;
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\f111  \f111  \f111 \00a0 \00a0";
+    text-align: right;
+    width: 100%;    
+    padding: 4px 0 5px 0;
+    height: 20px;    
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;        
+  }    
+}
+
+.bg .screenshot {  
+  &:after {
+  background-color: #384859;
+  color:#4b5f74;
+  }
+}
+
+.bg-odd .screenshot {
+  border-color: #38593c;  
+  &:after {
+  background-color: #38593c;
+  color:#4b7450;
+  }
+}

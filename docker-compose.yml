@@ -1,0 +1,11 @@
+
+version: "3"
+
+services:
+  app:
+    image: romeoz/docker-apache-php:5.4
+    volumes:
+     - ./build:/var/www/app/
+     - ./docker/sites-enabled:/etc/apache2/sites-enabled
+    ports:
+      - "8080:80"

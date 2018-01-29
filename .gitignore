@@ -1,0 +1,7 @@
+.ftppass
+*.sublime-workspace
+node_modules/*
+build/*
+Thumbs.db
+.DS_Store
+config.php

@@ -1,0 +1,42 @@
+// #10141b
+.card {
+	width: 100%;
+	min-height: 350px;
+	padding: 10px;
+	border-radius: 3px;
+	color:white;
+	background: url("assets/projectsplash.png") repeat-x center center;
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.50);	
+
+	&.odd {
+		background: url("assets/projectsplash-odd.png") repeat-x center center;
+	}
+
+	h3 {
+		border-color: white;
+		color: white;
+		margin-bottom: 15px;
+		margin-left: 10px;
+
+		.fa {
+			margin-right: 10px;
+			margin-left: 5px;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+
+		li {
+		margin-bottom: 4px;
+
+		&:before {    
+			font-family: 'FontAwesome';
+			content: '\f00c';
+			margin:0 10px 0 -20px;
+			color: white;
+		}
+	}
+	}
+}
+

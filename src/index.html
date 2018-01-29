@@ -1,0 +1,367 @@
+<!doctype html>
+<html class="no-js" lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Thomas Petrovic - Friends call me Pete!</title>
+        <meta name="description" content="">
+
+        <link rel="apple-touch-icon" href="website/style/assets/apple-touch.png">
+        <link rel="icon" type="image/png" href="website/style/assets/favicon.png" sizes="96x96" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="website/style/style.min.css">
+        <!--
+        todo: twitter # and @ links
+        todo: optimize menu-click-scrolling behaviour
+        todo: title/alt bubbles
+        todo: clean JavaScript "antianimation"
+        todo: preloader
+        todo: cleanup css
+        todo: fonts
+        -->
+
+    </head>
+    <body>
+
+        <div id="menu-button">
+            <button type="button" class="tcon tcon-menu--xcross">
+            <span class="tcon-menu__lines" aria-hidden="true"></span>
+            <span class="tcon-visuallyhidden">toggle menu</span>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" data-scroll="#about">About</a></li>
+                <li><a href="#projects" data-scroll="#projects">Projects</a></li>
+                <li><a href="#skills" data-scroll="#skills">Skills</a></li>
+                <li><a href="#contact" data-scroll="footer">Contact</a></li>
+            </ul>
+        </nav>
+        <header id="intro">
+          <div class="intro-content">
+            <h1 class="wow bounceInDown" data-wow-delay="0.2s">Hi stranger!</h1>
+            <h2 class="wow fadeInDown" data-wow-delay="0.9s">my friends call me Pete</h2>
+            <p class="wow fadeIn" data-wow-delay="0.8s">Former Photoshop addict, Geek, Gamer, Web Developer, <br /> Frontend Developer located in Vienna, Austria</p>
+          </div>
+          <div id="rend"></div>
+          </header>
+        <section id="about">
+            <a name="about"></a>
+            <!--
+            twitter dark cbd8ed
+            twitter bright eaeff7
+            -->
+            <div id="bubble-wrap">
+                <div id="bubble">
+
+                </div>
+            </div>
+            <div id="avatar" class="wow zoomIn">
+            </div>
+            <div class="container">
+                <div class="grid grid-pad">
+                    <div class="col-1-2">
+                        <div class="content">
+                            <h3>Me, Myself and I</h3>
+                            <p>My passion for Webdesign started 1999 as an 16 year old. I was simply fascinated about the fact that you can communicate and share information around the globe in seconds.</p>
+                            <p>After my final apprenticeship as a salesperson i started to develop skills primarely in Design, Photoshop, HTML and CSS. One of my big things theese days was dark-art and iconing.</p>
+                            <p>Since then, i was in many agencies in austria and my view shifted more towards Javascript and PHP development. </p>
+                        </div>
+                    </div>
+                    <div class="col-1-2">
+                        <div class="content">
+                            <h3>Nowadays</h3>
+                            <p>I try to be always on the edge with current Front-End Technologies, im also sortof the guy who codes in public busses just because i love what i do, and my fascination for the Web never stopped.</p>
+                            <p>Currently im employed as an Frontend Developer at <a href="http://www.ecosio.com" target="_blank">ecosio</a> in vienna, austria.</p>
+                            <p>In my freetime im maintaining my private projects, making "throw away for learning" projects or you'll find me shooting Zombies among other pixelated enemies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <a name="projects"></a>
+            <h2 class="headline">- Projects -</h2>
+              <div class="bg-odd">
+                <div class="container">
+                    <div class="grid grid-pad">
+                        <h3 class="wow fadeInDown">dlvr</h3>
+                        <div class="col-1-2">
+                            <div class="screenshot wow fadeInUp">
+                                <img src="https://camo.githubusercontent.com/629e11f6304f5acfa24939a5f44b72c08dd1ad6d/68747470733a2f2f61736369696e656d612e6f72672f612f774b4468675073476270353143755373454d416e4f5a3769562e706e67" />
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <div class="content wow fadeInUp" data-wow-delay="0.2s">
+                                <p>DeLiVeR - Command Line Tool to automate releasing processes for GitHub/GitLab/npm</p>
+                                <em>NodeJS, ES2016</em>
+                                <br />
+                                <div class="button-container clearfix">
+                                    <a href="https://github.com/FreaKzero/dlvr" target="_blank" class="button"><i class="fa fa-github"></i>Visit on Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <div class="container">
+                    <div class="grid grid-pad">
+                        <h3 class="wow fadeInDown">Brackets Swatcher</h3>
+                        <div class="col-1-2">
+                            <div class="screenshot wow fadeInUp">
+                                <img src="website/style/assets/swatcher.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <div class="content wow fadeInUp" data-wow-delay="0.2s">
+                                <p>Originally started as an Weekend Hack of mine, because i hated to deal with "Variable Files" from CSS Frameworks, Swatcher now, is a full blown color-management and importing tool for Adobe Brackets.</p>
+                                <p>Compatible with SASS and LESS, can import binary Adobe ACO and ASE Swatchfiles</p>
+                                <em>Written entirely in JavaScript, HTML, CSS</em>
+                                <br />
+                                <div class="button-container clearfix">
+                                    <a href="https://github.com/FreaKzero/brackets-swatcher" target="_blank" class="button"><i class="fa fa-github"></i>Visit on Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-odd">
+              <div class="container">
+                  <div class="grid grid-pad">
+                      <h3 class="wow fadeInDown">Sublime Text 3 Fieldmanual for Frontend Developers</h3>
+                      <div class="col-1-2">
+                          <div class="screenshot wow fadeInUp">
+                              <img src="website/style/assets/sublime.jpg" />
+                          </div>
+                      </div>
+                      <div class="col-1-2">
+                          <div class="content wow fadeInUp" data-wow-delay="0.2s">
+                              <p>A onepage tutorial in which im going through advanced techniques, configurations, shortcuts and plugins for Sublime Text 3</p>
+
+                              <em>Written in AngularJS, HTML, CSS</em>
+                              <br />
+                              <div class="button-container clearfix">
+                                  <a href="http://projects.freakzero.com/sublime" target="_blank" class="button"><i class="fa fa-globe"></i>Visit Website</a>
+                                  <a href="https://github.com/FreaKzero/sublime-frontend-fieldmanual" target="_blank" class="button"><i class="fa fa-github"></i>Visit on Github</a>
+                              </div>                            
+                          </div> 
+                      </div>
+                  </div>
+              </div>
+            </div>
+             <div class="bg">
+                <div class="container">
+                    <div class="grid grid-pad">
+                        <h3 class="wow fadeInDown">Super Shotgun Launcher</h3>
+                        <div class="col-1-2">
+                            <div class="screenshot wow fadeInUp">
+                                <img src="website/style/assets/supershotgun.png" />
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <div class="content wow fadeInUp" data-wow-delay="0.2s">
+                                <p>A so called Doom Frontend, easier Gamemod loading for the Game Doom with gzDoom or Zandronum, has also Oblige Random Map Builder Integration.</p>
+                                <em>Written in: AngularMaterial, jQuery, NWJS, underscore</em>
+                                <br />
+                                <div class="button-container clearfix">
+                                    <a href="https://github.com/FreaKzero/ssgl-doom-launcher" target="_blank" class="button"><i class="fa fa-github"></i>Visit on Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-odd">
+                <div class="container">
+                    <div class="grid grid-pad">
+                        <h3 class="wow fadeInDown">Warframe Alerts</h3>
+                        <div class="col-1-2">
+                            <div class="screenshot wow fadeInUp">
+                                <img src="website/style/assets/warframe.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <div class="content wow fadeInUp" data-wow-delay="0.2s">
+                                <p>Also an 2 day hack - back in the days there was no really good Twitter alert App for Warframe - so i did one.</p>
+                                <p>Only sad thing is that i dont have the time to continually maintain it</p>
+                                <em>Written in PHP and Javascript</em>
+                                <br />
+                                <div class="button-container clearfix">
+                                    <a href="http://projects.freakzero.com/warframe" target="_blank" class="button"><i class="fa fa-globe"></i>Visit Webapp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg">
+                <div class="container">
+                    <div class="grid grid-pad">
+                        <h3 class="wow fadeInDown">Adobe Swatch Importer</h3>
+                        <div class="col-1-2">
+                            <div class="screenshot wow fadeInUp">
+                                <img src="website/style/assets/swatchimporter.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <div class="content wow fadeInUp" data-wow-delay="0.2s">
+                                <p>Due to the need for an Swatchimporter for my Brackets Extension i was on the search for something similar to Port from - but found nothing.</p>
+                                <p>So i made an library to import and convert Adobe Color Swatches with Javascript, tried to reverseengeneer the binary ASE format. Still work in progress.</p>
+                                <em>Written in Javascript (requireJS Module)</em>
+                                <br />
+                                <div class="button-container clearfix">
+                                    <a href="https://github.com/FreaKzero/adobe-swatch-importer" target="_blank" class="button"><i class="fa fa-github"></i>Visit on Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-odd">
+                <div class="container">
+                    <div class="grid grid-pad">
+                        <h3 class="wow fadeInDown">Spencer</h3>
+                        <div class="col-1-2">
+                            <div class="screenshot wow fadeInUp">
+                                <img src="website/style/assets/spencer.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <div class="content wow fadeInUp" data-wow-delay="0.2s">
+                                <p>This was my really first requireJS Project, just made it to learn new Frameworks and technologies, due to this the code is pretty shi...</p>
+                                <p>But i know a lot of people who are using it daily, so i also present it here. An App to errorcheck Responsive Websites.</p>
+                                <em>Written in Javascript (requireJS, jQuery) and uiKit</em>
+                                <br />
+                                <div class="button-container clearfix">
+                                    <a href="http://projects.freakzero.com/spencer/" target="_blank" class="button"><i class="fa fa-globe"></i>Visit Webapp</a>
+                                    <a href="https://github.com/FreaKzero/spencer" target="_blank" class="button"><i class="fa fa-github"></i>Visit on Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <a name="skills"></a>
+            <h2 class="headline">- Skills &amp; Tools -</h2>
+            <div class="container">
+                <div class="grid grid-pad" style="padding-bottom: 10px;">
+                    <div class="col-1-3">
+                        <div class="content">
+                            <div class="card wow fadeInLeft" data-wow-delay="0.8s">
+                                <h3><i class="fa fa-code"></i>Tech/Lang</h3>
+                                <ul>
+                                    <li>Webpack</li>
+                                    <li>NW.js/Electron</li>
+                                    <li>Grunt/Gulp</li>
+                                    <li>Javascript/ES6</li>
+                                    <li>HTML5/CSS3</li>
+                                    <li>Python</li>
+                                    <li>LESS/SASS</li>
+                                    <li>MongoDB and SQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3">
+                        <div class="content">
+                            <div class="card odd wow zoomInDown" data-wow-delay="0.4s">
+                                <h3><i class="fa fa-cube"></i>FW and Libs</h3>
+                                <ul>
+                                    <li>React/Redux</li>
+                                    <li>Angular 1.x</li>
+                                    <li>DJANGO</li>
+                                    <li>Knockout</li>
+                                    <li>Electrode</li>
+                                    <li>jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3">
+                        <div class="content">
+                            <div class="card fadeInRight wow" data-wow-delay="0.8s">
+                                <h3><i class="fa fa-dashboard"></i>Using daily</h3>
+                                <ul>
+                                    <li>Git/GitLab/GitHub</li>
+                                    <li>Node/NPM/yarn</li>
+                                    <li>TernJS</li>
+                                    <li>MacOS/ArchLinux</li>
+                                    <li>Microsoft Visual Studio Code</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="clearfix">
+        <a name="contact"></a>
+        <p class="bigFooter">Questions ? Just want to connect ? <br /> sure! <a href="#" id="opencontactform">drop me a line!</a></p>
+            <p class="contactform-msg">Thank you for your Message!</p>
+
+            <form id="contactform" class="container">
+                <div class="grid grid-pad">
+                    <div class="col-5-12">
+                        <div class="content">
+                            <label for="name">Your Name*</label>
+                            <input type="text" id="contactform-name" name="name" placeholder="John Doe">
+
+                            <label for="website">Your Website</label>
+                            <input type="text" id="contactform-website" name="website" placeholder="http://">
+
+                            <label for="email">Your Emailadress*</label>
+                            <input type="text" id="contactform-email" name="email" placeholder="johndoe@gmail.com">
+
+                        </div>
+                    </div>
+                    <div class="col-7-12">
+                        <div class="content">
+                            <label for="message">Message*</label>
+                            <textarea id="contactform-message" name="message"></textarea>
+
+                            <div class="button-container clearfix">
+                            <br />
+                                <div class="button">
+                                    <input type="submit" value="Send Message" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        <div class="social-container">
+            <a href="https://keybase.io/freakzero" target="_blank" title="keybase" class="social wow bounceIn" data-wow-delay="0.2s"><i class="fa fa-key"></i></a>
+
+            <a href="https://twitter.com/freakzerodotcom/" target="_blank" title="twitter" class="social wow bounceIn" data-wow-delay="0.4s"><i class="fa fa-twitter"></i></a>
+
+            <a href="https://plus.google.com/+FreaKzero/posts" target="_blank" title="google+" class="social wow bounceIn" data-wow-delay="0.6s"><i class="fa fa-google-plus"></i></a>
+
+            <a href="http://freak0.deviantart.com/" target="_blank" title="deviantArt" class="social wow bounceIn" data-wow-delay="0.8s"><i class="fa fa-deviantart"></i></a>
+
+            <a href="http://codepen.io/freakzero/" target="_blank" title="codepen" class="social wow bounceIn" data-wow-delay="0.6s"><i class="fa fa-codepen"></i></a>
+
+            <a href="https://www.xing.com/profile/Thomas_Petrovic4" target="_blank" title="google+" class="social wow bounceIn" data-wow-delay="0.4s"><i class="fa fa-xing"></i></a>
+
+            <a href="http://www.github.com/freakzero" target="_blank" title="github" class="social wow bounceIn" data-wow-delay="0.2s"><i class="fa fa-github"></i></a>
+        </div>
+        <div id="copy"> <p>&copy; 2015 Thomas Petrovic - Made with <span style="color:#FF0066;">&hearts;</span>, 8 coffees, wow.js and FontAwesome</p>
+        </div>
+</footer>
+<script type="text/javascript" src="website/build.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-63605510-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</body>
+</html>

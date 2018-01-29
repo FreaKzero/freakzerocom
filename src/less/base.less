@@ -1,0 +1,114 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	outline: none;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+h3 {
+	padding: 0 0 0.3em 0;
+	margin: 0 0 0 0;
+	font-size: 1.6em;
+	font-family: 'Arvo', serif;
+	border-bottom: 3px solid @blue;
+	font-weight: 400;
+	color: @blue;
+}
+	
+.button-container {
+	& > .button {
+		float:right;
+		margin-left: 10px;
+	}
+}
+
+div.button {
+	margin-bottom: 10px;
+	padding: 10px 20px 10px 20px;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid white;
+	width: 250px;
+	text-align:center;	
+
+	& > input {
+		background-color: transparent;
+		border:none;
+		padding: 0;
+		margin: 0;
+		width:100%;
+	}
+}
+
+a.button {
+	margin-bottom: 10px;
+	padding: 10px 20px 10px 20px;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid white;
+	width: 250px;
+	text-align:center;
+}
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	background: transparent;
+	transition-property: color border-color;
+	transition-duration: 0.4s;
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: white;
+		transform: scaleX(0);
+		transform-origin: 50%;
+		transition-property: transform;
+		transition-duration: 0.4s;
+		transition-timing-function: cubic-bezier(.66,.01,.25,1)
+	}
+
+	&:hover, &:focus, &:active {
+		//todo: change color to blue
+		color: black;
+	}
+
+	&:hover:before, &:focus:before, &:active:before {
+		transform: scaleX(1);
+	}
+
+	.fa {
+		margin-right: 15px;
+	}
+
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}

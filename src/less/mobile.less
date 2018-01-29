@@ -1,0 +1,141 @@
+@media(max-width: 1021px) {	
+	#menu-button {    
+		left: auto !important;
+		right: 10px;
+  		top: auto !important;
+  		bottom: 10px;
+	}
+
+
+	header {	
+		height: 15em !important;
+
+		h1 {
+      letter-spacing: 0.030em;
+      text-shadow: 4px 4px 0px @blue !important;
+		}
+		h2 {
+      font-size: 3.8em;
+      text-shadow: 2px 2px 0px @blue !important;
+		}
+	}
+
+	nav {
+		position: fixed !important;
+		height: 100% !important;
+		background: rgba(56,72,89,0.9) !important;		
+		visibility: hidden;
+
+		ul {
+			padding-left: 0 !important;
+			margin-left: 0 !important;
+			margin-top: 40px !important;
+
+			li {
+				font-size: 2em !important;
+				display:block !important;
+				margin-bottom: 15px !important;
+			}
+		}
+	}
+
+	.container {
+		width: 95% !important;
+	}
+
+    header {	
+		height: 30em !important;
+	
+		h1 {
+			padding: 0.1em 0 0 0 !important;
+			font-size: 4.5em;
+		}
+
+		h2 {
+			font-size: 3em;
+		}
+	}
+}
+
+@media(max-width: 740px) {
+	#bubble-wrap {		
+		top: -200px !important;
+	}
+
+	.container {
+		width: 90% !important;
+	}
+
+	header {	
+		height: 15em !important;
+	
+		h1 {
+			padding: 0.5em 0 0 0 !important;
+			font-size: 2.3em !important;
+		}
+
+		h2 {
+			font-size: 1em !important;		
+		}
+
+		p {
+			font-size: 0.9em !important;
+		}	
+	}
+
+	section#about #avatar {
+		width: 80px !important;
+		height: 80px !important;
+		margin-left: -40px !important;
+    top: -40px !important;
+	}
+
+	footer.contactform > #contactform {	
+		height: auto !important;
+	}
+} 
+
+@media (max-width: 605px) {
+	
+	section#projects {
+		.bg {
+			background-attachment: initial !important;
+
+		}
+
+		.bg-odd {
+			background-attachment: initial !important;
+		}
+	}
+	
+	nav a:hover:before {
+		  	display:none;
+		  	transition: none;
+			
+	}	
+
+	#bubble-wrap {
+		left: 10px !important;
+		margin-left: 0 !important;
+		top: -200px !important;
+		width: 95% !important;
+	}
+	#bubble {
+		width: 95% !important;
+		margin: 0 auto;
+
+		&:after {
+			left: 50% !important;
+		}
+	}
+	.button {
+		width: 100% !important;
+	}
+
+	footer {		
+		p#endsentence {
+			font-size: 1.2em !important;
+			margin-bottom: 30px;
+		}
+	}
+}
